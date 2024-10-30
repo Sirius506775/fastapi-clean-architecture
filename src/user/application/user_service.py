@@ -40,7 +40,6 @@ class UserService:
             name=name,
             email=email,
             password=self.crypto.hash_password(password),
-            password=password,
             created_at=now,
             updated_at=now,
         )
